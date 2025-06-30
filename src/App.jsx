@@ -1,14 +1,18 @@
- 
-import './App.css'    
+
+import { Provider } from 'react-redux'
+import './App.css'
 import Body from './Components/Body/Body.jsx'
 import NavBar from './Components/navBar/NavBar.jsx'
+import store from './utils/store.js'
 
-function App() { 
+function App() {
 
   return (
-    <> 
-       <NavBar/>
-       <Body/>
+    <>
+      <Provider store={store}> 
+        <NavBar/>
+        <Body />
+      </Provider>
     </>
   )
 }

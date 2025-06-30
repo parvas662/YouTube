@@ -1,7 +1,10 @@
+import { useSelector } from "react-redux";
 
 const SideBar = () => {
+    const isMenuOpen = useSelector((store)=> store.app.isMenuOpen);
+
     return (
-        <div className="w-48 p-5 shadow-xl">
+        isMenuOpen && <div className="w-48 p-5 shadow-xl">
             <ul>   
                 <li>Home </li>
                 <li>Shorts </li>
@@ -9,7 +12,8 @@ const SideBar = () => {
                 
             </ul>
             <br />
-            <h1 className="font-bold">Explore</h1>
+            <hr className="border-gray-300  "/>
+            <h1 className=" pt-5 font-bold">Explore</h1>
             <ul>        
                 <li>Trending </li>
                 <li>shopping </li>
@@ -18,7 +22,8 @@ const SideBar = () => {
             </ul>
             
             <br />
-            <h1 className="font-bold">Watch Later</h1>
+            <hr  className="border-gray-300  "/>
+            <h1 className=" pt-5 font-bold">Watch Later</h1>
             <ul>
                 <li>Gaming</li>
                 <li>News</li> 

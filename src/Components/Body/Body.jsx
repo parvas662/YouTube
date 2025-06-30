@@ -1,10 +1,12 @@
-import SideBar from "../SiderBar/SideBar";
+import MainContainer from "../MainContainer/MainContainer";
+import SideBar from "../SideBar/SideBar";
 
 
 const Body = () =>{
     return (
-        <div >
-            
+        <div className="flex">
+            <SideBar/>
+            <MainContainer/>
         </div>
     )
 }

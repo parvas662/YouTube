@@ -4,7 +4,7 @@ const SideBar = () => {
     const isMenuOpen = useSelector((store)=> store.app.isMenuOpen);
 
     return (
-        isMenuOpen && <div className="w-48 p-5 shadow-xl">
+        isMenuOpen && <div className="w-56 flex-shrink-0 p-5 shadow-xl">
             <ul>   
                 <li>Home </li>
                 <li>Shorts </li>

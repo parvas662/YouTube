@@ -14,8 +14,8 @@ const WatchPage = () => {
   }, [])
 
   return (
-    <div>
-      <iframe className="p-2"
+    <div >
+      <iframe className="px-8 py-4 rounded-2xl"
         width="1000"
         height="500"
         src= {`https://www.youtube.com/embed/${query}?autoplay=1&mute=0`}

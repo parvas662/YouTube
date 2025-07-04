@@ -6,3 +6,92 @@ export const YOUTUBE_VIDEOS_API = `https://youtube.googleapis.com/youtube/v3/vid
 export const WATCH_VIDEO_API = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc&key=' + API_KEY
 
 export const YOUTUBE_SEARCH_API ='http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q='
+
+// Comments data
+export const commentData = [{
+    'author': "Vishu",
+    'description': "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+    replies: [
+      {
+        author: "Aman",
+        description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+        replies: [{
+          author: "arpit",
+          description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+          replies: [{
+              'author': "loki",
+              'description': "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+              'replies': [
+                {
+                  author: "munna",
+                  description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+                  replies: [{
+                    author: "shanu",
+                    description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+                    replies: []
+                  }
+                  ]
+                }
+              ]
+            },
+            
+          ]
+        }, 
+        {
+          author: "author1",
+          description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+          replies: [{
+            author: "author2",
+            description: "Lorem, ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, suscipit rerum? Error in vel veritatis necessitatibus eos nobis id, perspiciatis ratione assumenda sed possimus a est illum, maiores, quaerat ipsum doloremque consectetur natus veniam. dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+            replies: []
+          }]
+        }
+        ]
+      }
+    ]
+  },
+
+  {
+    'author': "Parvas",
+    'description': "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+    replies: [
+      {
+        author: "Aman",
+        description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+        replies: [{
+          author: "arpit",
+          description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+          replies: [
+            {
+              'author': "loki",
+              'description': "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+              'replies': [
+                {
+                  author: "munna",
+                  description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+                  replies: [{
+                    author: "shanu",
+                    description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+                    replies: []
+                  }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        ]
+      }
+    ]
+  },
+  {
+    author: "author1",
+    description: "Lorem, ipsum dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+    replies: [{
+      author: "author2",
+      description: "Lorem, ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, suscipit rerum? Error in vel veritatis necessitatibus eos nobis id, perspiciatis ratione assumenda sed possimus a est illum, maiores, quaerat ipsum doloremque consectetur natus veniam. dolor sit pudiandae Lorem ipsum dolor, adipisicing",
+      replies: []
+    }
+    ]
+  }
+  ]
